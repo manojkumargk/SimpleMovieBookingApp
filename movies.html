@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>Select a Movie</h2>
+  <form action="BookingServlet" method="post">
+    <select name="movie">
+      <option value="Spider-Man: Homecoming" data-adult="false">Spider-Man: Homecoming</option>
+      <option value="The Lion King" data-adult="false">The Lion King</option>
+      <option value="Deadpool (18+)" data-adult="true">Deadpool (18+)</option>
+      <option value="Joker (18+)" data-adult="true">Joker (18+)</option>
+    </select>
+    <input type="hidden" id="isAdult" name="isAdult" value="false">
+    <button type="submit">Book Ticket</button>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
